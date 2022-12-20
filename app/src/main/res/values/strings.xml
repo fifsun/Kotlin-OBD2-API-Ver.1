@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Kotlin-OBD2-API ver.1</string>
+    <string name="app_name">Multi Sub Meter ver.1</string>
+    <string name="main_func_tab_name_1">グラフデータ表示</string>
+    <string name="main_func_tab_name_2">アプリ設定</string>
+    <string name="main_func_tab_name_3">車両情報</string>
+    <string name="main_func_tab_name_4">接続支援</string>
+    <string name="main_func_tab_name_5">SKYACTIV-D 1.5</string>
+    <string name="setting_appbar_name">設定</string>
+    <string name="carInfo_select_appbar_name">車両情報 - 選択</string>
+    <string name="carInfo_add_appbar_name">車両情報 - 登録</string>
+    <string name="carInfo_detail_appbar_name">車両情報 - 詳細</string>
+    <string name="graphData_appbar_name">グラフデータ</string>
+    <string name="graphData_setting_appbar_name">グラフデータ - 設定</string>
+    <string name="graphData_add_appbar_name">グラフデータ - 追加</string>
+    <string name="app_namea">Kotlin-OBD2-API ver.1</string>
+    <string name="app_names">Kotlin-OBD2-API ver.1</string>
+    <string name="app_named">Kotlin-OBD2-API ver.1</string>
+    <string name="app_namef">Kotlin-OBD2-API ver.1</string>
+    <string name="app_nameg">Kotlin-OBD2-API ver.1</string>
+    <string name="app_nameh">Kotlin-OBD2-API ver.1</string>
+
+
 </resources>

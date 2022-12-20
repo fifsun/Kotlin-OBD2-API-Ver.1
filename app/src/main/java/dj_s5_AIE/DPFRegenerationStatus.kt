@@ -1,4 +1,4 @@
-package dj_s5_aie
+package dj_s5_AIE
 
 import com.github.eltonvs.obd.command.ObdCommand
 import com.github.eltonvs.obd.command.ObdRawResponse

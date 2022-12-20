@@ -1,4 +1,4 @@
-package dj_s5_EW6AX_EL
+package dj_EW6AX
 
 import com.github.eltonvs.obd.command.ObdCommand
 import com.github.eltonvs.obd.command.ObdRawResponse
