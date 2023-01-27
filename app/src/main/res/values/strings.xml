@@ -19,5 +19,13 @@
     <string name="app_nameg">Kotlin-OBD2-API ver.1</string>
     <string name="app_nameh">Kotlin-OBD2-API ver.1</string>
 
+    <string name="graphData_skyactivd_EGR">EGR HOT/COOL バルブ開度</string>
+    <string name="app_nameh">Kotlin-OBD2-API ver.1</string>
+    <string name="app_nameh">Kotlin-OBD2-API ver.1</string>
+    <string name="app_nameh">Kotlin-OBD2-API ver.1</string>
+    <string name="app_nameh">Kotlin-OBD2-API ver.1</string>
+    <string name="app_nameh">Kotlin-OBD2-API ver.1</string>
+
+
 
 </resources>

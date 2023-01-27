@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+
+            app:toolbarId="@+id/toolbar">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="832dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@android:drawable/alert_light_frame" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/alert_light_frame" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@android:drawable/alert_light_frame" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/GDSD_EGR_POSITION_BAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/GDSD_EGR_POSITION_BAR_TITLE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EGR HOT/COOL バルブ開度"
+                        android:textSize="20sp" />
+
+                    <ProgressBar
+                        android:id="@+id/GDSD_EGR_HOT_POSITION_BAR_GRAPH"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp" />
+
+                    <ProgressBar
+                        android:id="@+id/GDSD_EGR_COOL_POSITION_BAR_GRAPH"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/GDSD_BT_GRAPH_BAR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/GDSD_BOOST_BAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/GDSD_BOOST_BAR_GRAPH"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/GDSD_BOOST_BAR_GRAPH_TITLE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GDSD_TORQUE_BAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/GDSD_TORQUE_BAR_GRAPH"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/GDSD_TORQUE_BAR_TITLE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="20sp"
+                        app:autoSizeTextType="none" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/GDSD_TEMP_BAR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/GDSD_COOLANT_TEMP_BAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/GDSD_COOLANT_TEMP_BAR_GRAPH"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/GDSD_COOLANT_TEMP_BAR_TITLE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="20sp"
+                        app:autoSizeTextType="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GDSD_EG_OIL_TEMP_BAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/GDSD_EG_OIL_TEMP_BAR_GRAPH"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/GDSD_EG_OIL_TEMP_BAR_TITLE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="20sp"
+                        app:autoSizeTextType="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/GDSD_TM_FLUID_TEMP_BAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/GDSD_TM_FLUID_TEMP_BAR_GRAPH"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:id="@+id/GDSD_TM_FLUID_TEMP_BAR_TITLE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar3"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="20sp"
+                        app:autoSizeTextType="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar3"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="104dp"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="OFF"
+                        android:textSize="48sp"
+                        app:autoSizeTextType="none" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autoText="false"
+                        android:text="TextView"
+                        android:textSize="20sp"
+                        app:autoSizeTextType="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar3"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="104dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
