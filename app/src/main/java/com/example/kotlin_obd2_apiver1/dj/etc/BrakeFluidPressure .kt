@@ -1,15 +1,15 @@
-package dj_etc
+package com.example.kotlin_obd2_apiver1.dj.etc
 
 import com.github.eltonvs.obd.command.ObdCommand
 import com.github.eltonvs.obd.command.ObdRawResponse
 import com.github.eltonvs.obd.command.bytesToInt
 
-class BrakeSwitch : ObdCommand() {
+class BrakeFluidPressure : ObdCommand() {
         // Required
-        override val tag = "BRAKE_SW"
-        override val name = "Brake Switch"
+        override val tag = "BFP"
+        override val name = "Brake Fluid Pressure"
         override val mode = "01"
-        override val pid = "22DA05"
+        override val pid = "22280A"
 
         // Optional
         override val defaultUnit = "%"

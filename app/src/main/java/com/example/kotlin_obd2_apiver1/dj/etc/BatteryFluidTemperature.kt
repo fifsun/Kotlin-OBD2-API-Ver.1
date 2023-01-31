@@ -1,4 +1,4 @@
-package dj_etc
+package com.example.kotlin_obd2_apiver1.dj.etc
 
 import com.github.eltonvs.obd.command.ObdCommand
 

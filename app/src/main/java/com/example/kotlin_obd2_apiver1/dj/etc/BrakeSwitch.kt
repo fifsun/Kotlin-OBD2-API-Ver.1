@@ -1,15 +1,15 @@
-package dj_etc
+package com.example.kotlin_obd2_apiver1.dj.etc
 
 import com.github.eltonvs.obd.command.ObdCommand
 import com.github.eltonvs.obd.command.ObdRawResponse
 import com.github.eltonvs.obd.command.bytesToInt
 
-class BatteryEstimatedStateOfCharge : ObdCommand() {
+class BrakeSwitch : ObdCommand() {
         // Required
-        override val tag = "BATT_SOC"
-        override val name = "Battery Estimated State of Charge"
+        override val tag = "BRAKE_SW"
+        override val name = "Brake Switch"
         override val mode = "01"
-        override val pid = "224028"
+        override val pid = "22DA05"
 
         // Optional
         override val defaultUnit = "%"

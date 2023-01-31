@@ -1,17 +1,17 @@
-package dj_s5_AIE
+package com.example.kotlin_obd2_apiver1.dj.S5_AIE
 
 import com.github.eltonvs.obd.command.ObdCommand
 import com.github.eltonvs.obd.command.ObdRawResponse
 import com.github.eltonvs.obd.command.bytesToInt
 
-class DPFLampCount : ObdCommand() {
+class DPFDifferentialPressure : ObdCommand() {
         // Required
-        override val tag = "DPF_LMP_CNT"
-        override val name = "DPF Lamp Count"
+        override val tag = "DPF_DP"
+        override val name = "DPF Differential Pressure"
         override val mode = "01"
-        override val pid = "220433"
+        override val pid = "22f47a"
 
         // Optional
-        override val defaultUnit = "CNT"
+        override val defaultUnit = "kPa"
         override val handler = { it: ObdRawResponse -> bytesToInt(it.bufferedValue).toString() }
 }

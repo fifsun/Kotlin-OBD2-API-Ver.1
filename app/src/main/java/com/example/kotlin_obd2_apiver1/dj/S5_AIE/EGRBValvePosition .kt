@@ -1,4 +1,4 @@
-package dj_s5_AIE
+package com.example.kotlin_obd2_apiver1.dj.S5_AIE
 
 import com.github.eltonvs.obd.command.ObdCommand
 import com.github.eltonvs.obd.command.ObdRawResponse

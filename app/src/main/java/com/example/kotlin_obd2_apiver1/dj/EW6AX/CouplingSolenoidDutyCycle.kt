@@ -1,4 +1,4 @@
-package dj_EW6AX
+package com.example.kotlin_obd2_apiver1.dj.EW6AX
 
 import com.github.eltonvs.obd.command.ObdCommand
 import com.github.eltonvs.obd.command.ObdRawResponse

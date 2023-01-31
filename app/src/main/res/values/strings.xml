@@ -19,12 +19,24 @@
     <string name="app_nameg">Kotlin-OBD2-API ver.1</string>
     <string name="app_nameh">Kotlin-OBD2-API ver.1</string>
 
-    <string name="graphData_skyactivd_EGR">EGR HOT/COOL バルブ開度</string>
-    <string name="app_namei">Kotlin-OBD2-API ver.1</string>
-    <string name="app_namej">Kotlin-OBD2-API ver.1</string>
-    <string name="app_namek">Kotlin-OBD2-API ver.1</string>
-    <string name="app_namel">Kotlin-OBD2-API ver.1</string>
-    <string name="app_namem">Kotlin-OBD2-API ver.1</string>
+    <string name="d_eg_egr_bar_title">EGR HOT/COOL バルブ開度</string>
+    <string name="d_tm_rc_bar_title">トルク前後配分</string>
+    <string name="d_tm_gear_bar_title">GEAR / LOCKUP</string>
+    <string name="d_dpf_distance_bar_title">DPF再生後距離</string>
+    <string name="d_dpf_pm_bar_title">PM堆積量</string>
+    <string name="d_dpf_temp_bar_title">DPF温度</string>
+    <string name="d_tm_fluid_temp_bar_title">T/M Fluid</string>
+    <string name="d_eg_oil_temp_bar_title">E/G Oil</string>
+    <string name="d_eg_coolant_temp_bar_title">E/G Coolant</string>
+    <string name="d_torque_bar_title">Torque(Nm)</string>
+    <string name="d_boost_bar_title">Boost(bar)</string>
+
+    <string name="mb_main">注意</string>
+    <string name="mb_sub">運転中にアプリの操作をするのはおやめください</string>
+
+
+
+
 
 
 
