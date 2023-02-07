@@ -7,6 +7,8 @@ import com.example.kotlin_obd2_apiver1.R
 
 class AdapterSearchActivity : AppCompatActivity() {
 
+
+
     @Suppress("DEPRECATION")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
